@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Documentation</title>
+</head>
+
+<body>
+    <div class="main-body">
+        <nav id="navbar">
+            <header>Documentation Menu</header>
+            <a href="#Intro" class="nav-link">
+                What is HTML?</a>
+            <a href="#CSS" class="nav-link">
+                CSS Basics</a>
+            <a href="#Selectors" class="nav-link">
+                CSS Selectors</a>
+            <a href="#BoxModel" class="nav-link">
+                Box Model</a>
+            <a href="#Flexbox" class="nav-link">
+                Flexbox</a>
+            <a href="#Grid" class="nav-link">
+                CSS Grid</a>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="Intro">
+                <header>
+                    What is HTML?
+                </header>
+                <p>
+                    HTML (HyperText Markup Language) is the standard markup language used to create web pages. It
+                    describes the structure of web pages using a variety of tags and attributes. HTML elements are the
+                    building blocks of HTML pages and can include text, images, links, and other content. HTML is
+                    essential for creating and structuring content on the web.
+                </p>
+                <p>
+                    A basic HTML document includes the following structure:
+                    <br><br>Let us now look at the structure :<br>
+                </p>
+                <code>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                        &lt;title&gt;My First Web Page&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                        &lt;h1&gt;Hello World!&lt;/h1&gt;<br>
+                        &lt;p&gt;Welcome to my first web page.&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </code>
+                <br>
+                <p>HTML provides the foundation for web development and is often used in conjunction with CSS and
+                    JavaScript to create interactive and visually appealing web pages.</p>
+            </section>
+
+            <section class="main-section" id="CSS">
+                <header>
+                    CSS Basics
+                </header>
+                <p>
+                    CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a
+                    document written in HTML. CSS controls the layout, color, fonts, and overall appearance of web
+                    pages. It allows developers to separate the content of a web page from its visual presentation.
+                </p>
+                <p><b>CSS Syntax: </b>CSS consists of selectors and declaration blocks. A selector is used to target
+                    HTML elements, and the declaration block contains one or more property-value pairs.
+                    <br>
+                    <b>Example CSS:</b>
+                    <br>
+                </p>
+                <code>
+                    h1 {<br>
+                        color: blue;<br>
+                        text-align: center;<br>
+                    }<br>
+                    p {<br>
+                        font-size: 16px;<br>
+                        line-height: 1.5;<br>
+                    }
+                </code>
+                <br>
+                <p>CSS enhances the visual appeal of web pages and helps in creating responsive designs that adapt to
+                    various screen sizes.</p>
+            </section>
+
+            <section class="main-section" id="Selectors">
+                <header>
+                    CSS Selectors
+                </header>
+                <p>
+                    CSS selectors are used to target HTML elements to apply styles. They can be simple or complex,
+                    depending on the needs of the design.
+                    <br><br>
+                    <b>Common CSS Selectors:</b>
+                    <br><br>
+                    <b>Element Selector:</b> Targets elements by their tag name. Example: <code>p { color: red; }</code>
+                    <br><br>
+                    <b>Class Selector:</b> Targets elements with a specific class attribute. Example:
+                    <code>.class-name { font-size: 20px; }</code>
+                    <br><br>
+                    <b>ID Selector:</b> Targets elements with a specific id attribute. Example:
+                    <code>#id-name { background-color: yellow; }</code>
+                    <br><br>
+                    <b>Attribute Selector:</b> Targets elements based on their attributes. Example:
+                    <code>[type="text"] { border: 1px solid gray; }</code>
+                </p>
+            </section>
+
+            <section class="main-section" id="BoxModel">
+                <header>
+                    Box Model
+                </header>
+                <p>
+                    The CSS Box Model is a fundamental concept that describes how elements are structured and how their
+                    sizes are calculated. The box model consists of:
+                    <br><br>
+                    <b>Content:</b> The actual content of the box, such as text or images.
+                    <br><br>
+                    <b>Padding:</b> The space between the content and the border. Padding can be set on all sides of the
+                    box.
+                    <br><br>
+                    <b>Border:</b> A border surrounding the padding (if any). Borders can have different styles, widths,
+                    and colors.
+                    <br><br>
+                    <b>Margin:</b> The space outside the border, separating the element from other elements. Margins can
+                    be used to create space between elements.
+                </p>
+            </section>
+
+            <section class="main-section" id="Flexbox">
+                <header>
+                    Flexbox
+                </header>
+                <p>
+                    Flexbox is a CSS layout module designed to help create flexible and responsive layouts. It allows
+                    items in a container to be aligned and distributed efficiently within the available space.
+                    <br><br>
+                    <b>Key Flexbox Properties:</b>
+                    <br><br>
+                    <b>Container Properties:</b>
+                <ul>
+                    <li><code>display: flex;</code> - Defines a flex container.</li>
+                    <li><code>flex-direction</code> - Specifies the direction of the flex items (row, column,
+                        row-reverse, column-reverse).</li>
+                    <li><code>justify-content</code> - Aligns items along the main axis (flex-start, center,
+                        space-between, etc.).</li>
+                    <li><code>align-items</code> - Aligns items along the cross axis (flex-start, center, stretch,
+                        etc.).</li>
+                </ul>
+                <b>Item Properties:</b>
+                <ul>
+                    <li><code>flex-grow</code> - Defines the ability of a flex item to grow relative to other items.
+                    </li>
+                    <li><code>flex-shrink</code> - Defines the ability of a flex item to shrink relative to other items.
+                    </li>
+                    <li><code>flex-basis</code> - Defines the default size of a flex item before growing or shrinking.
+                    </li>
+                </ul>
+                </p>
+            </section>
+
+            <section class="main-section" id="Grid">
+                <header>
+                    CSS Grid
+                </header>
+                <p>
+                    CSS Grid Layout is a two-dimensional layout system for the web. It allows developers to create
+                    complex layouts using rows and columns. Grid layout enables precise control over element placement
+                    and alignment.
+                    <br><br>
+                    <b>Key Grid Properties:</b>
+                    <br><br>
+                    <b>Container Properties:</b>
+                <ul>
+                    <li><code>display: grid;</code> - Defines a grid container.</li>
+                    <li><code>grid-template-columns</code> - Defines the number and size of columns.</li>
+                    <li><code>grid-template-rows</code> - Defines the number and size of rows.</li>
+                    <li><code>grid-gap</code> - Defines the gaps between grid items.</li>
+                </ul>
+                <b>Item Properties:</b>
+                <ul>
+                    <li><code>grid-column</code> - Defines how many columns an item should span.</li>
+                    <li><code>grid-row</code> - Defines how many rows an item should span.</li>
+                    <li><code>justify-self</code> - Aligns an item horizontally within its grid area.</li>
+                    <li><code>align-self</code> - Aligns an item vertically within its grid area.</li>
+                </ul>
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+
+
+</html>
